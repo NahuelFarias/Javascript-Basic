@@ -1,18 +1,26 @@
-40 // Int
+// Valores primitivos:
 
-"Nahuel Farias" // String
+// Int =
+40 
 
+// String =
+"Nahuel Farias" 
+
+// Boleanos =
 true
-false // Boleanos
+false 
 
+// Valores reservados - Valores vacios - Se usan para reservar memoria =
 null
-undefined // Valores reservados - Valores vacios - Se usan para reservar memoria
+undefined 
 
-// En conjunto son los valores primitivos
 
 // Valores no primitivos:
 
+// Valor tipo array =
 [1, 2 ,3]
-{ nombre: "Diego" } // Valor tipo objeto
+
+// Valor tipo objeto =
+{ nombre: "Diego" } 
 
 // Para comprobar los tipos de valores usamos la función "typeof"
