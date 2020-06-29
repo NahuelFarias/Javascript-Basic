@@ -1,0 +1,18 @@
+--> Condicionales: If, Else, Else If
+
+El if de toda la vida.
+
+Condicion ? Cosa que hace si es verdadero : Cosa que hace si es falso;
+
+--> Switch
+
+El swich de toda la vida con el break.
+
+swich (dato) {
+    case condicion:
+        intrucciones;
+        break;
+    case otraCondicion:
+        instrucciones;
+        break;
+}

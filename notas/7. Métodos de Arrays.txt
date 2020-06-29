@@ -1,0 +1,52 @@
+--> Métodos de recorridos de Arrays
+
+.filter : nos permite filtrar solo los elementos que deseamos (según ciertos criterios) y devolverlos en un nuevo array.
+
+.map : crea un nuevo array con los resultados de la llamada a la función indicada aplicados a cada uno de sus elementos.
+
+
+--> Recorriendo Arrays con .find(), .forEach() y .some()
+
+Ej:
+
+    var articulos = [
+        { nombre: "Bici", costo: 3000 },
+        { nombre: "TV", costo: 2500 },
+        { nombre: "Libro", costo: 320 },
+        { nombre: "Celular", costo: 10000 },
+        { nombre: "Laptop", costo: 20000 },
+        { nombre: "Teclado", costo: 500 },
+        { nombre: "Audifonos", costo: 1700 }
+    ];
+
+    var encuentraArticulo = articulos.find(function(articulo){
+        return articulo.nombre === "Laptop";
+    });
+
+    articulos.forEach(function(articulo){
+        console.log(articulo.nombre);
+    });
+
+    var articulosBaratos = articulos.some(function(articulo){
+        return articulo.costo <= 700;
+    });
+
+
+El .forEach() NO crea un nuevo array y el .map() sí lo hace.
+
+El .filter() crea un nuevo array con los objetos que cumplan una condición, el .some() solamente indica si hay o no algún objeto que cumpla
+dicha condición.
+
+El .find () devuelve SOLO el primer objeto que cumpla con la condición.
+
+EJ: Si en tu array de artículos tienes una bici de $800 y luego un celular de $800, si usas un .find() para buscar un artículo de dicho
+costo aparecerá solo la bicicleta, si deseas ambos tienes que usar un .filter().
+
+
+--> Eliminando elementos de un Array
+
+El método .push() nos permite agregar uno o más elementos al final de un array.
+
+.shift() eliminar el primer elemento de un array, es decir, elimina el elemento que esté en el índice 0.
+
+El método .pop() eliminará el último elemento de un array.
